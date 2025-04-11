@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uông Minh Khải | .NET Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./ve-logo.png">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="container nav-container">
+      <!-- <a href="#" class="logo">Minh Khải</a> -->
+      <ul class="nav-links">
+        <li><a href="#about" data-key="nav.about">Về Tôi</a></li>
+        <li><a href="#skills" data-key="nav.skills">Kỹ Năng</a></li>
+        <li><a href="#projects" data-key="nav.projects">Dự Án</a></li>
+        <li><a href="#contact" data-key="nav.contact">Liên Hệ</a></li>
+      </ul>
+
+      <!-- Nút chuyển đổi ngôn ngữ -->
+      <button id="language-toggle" class="btn btn-language">EN</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h1 data-key="hero.title">UÔNG MINH KHẢI</h1>
+      <p data-key="hero.subtitle">Freelance .NET Developer | Sinh viên tại DNTU</p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary" data-key="hero.contactBtn">Liên Hệ Ngay</a>
+        <a href="#projects" class="btn btn-outline" data-key="hero.projectsBtn">Xem Dự Án</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title" data-key="about.title">Về Tôi</h2>
+      <div class="about-content">
+        <img src="./ve-logo.png" alt="Nguyen Minh Khai" class="profile-image">
+        <div class="about-text">
+          <h3 data-key="about.subtitle">Freelance .NET Developer</h3>
+          <p data-key="about.description1">Tôi là một nhà phát triển .NET đầy nhiệt huyết, đang tìm kiếm cơ hội để mở
+            rộng kỹ năng và kinh nghiệm thông qua các dự án freelance. Tôi có nền tảng vững chắc về phát triển web, làm
+            việc nhóm và giải quyết vấn đề.</p>
+          <p data-key="about.description2">Với kiến thức chuyên sâu về ASP.NET Core, Entity Framework và các công nghệ
+            liên quan, tôi cam kết mang đến các giải pháp chất lượng cao và đáp ứng nhu cầu khách hàng.</p>
+          <div class="info-list">
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span data-key="about.location">Long Thành, Đồng Nai</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <span data-key="about.email">minhkhai.dev@gmail.com</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-phone"></i>
+              <span data-key="about.phone">+84 363 606 453</span>
+            </div>
+            <div class="info-item">
+              <i class="fab fa-github"></i>
+              <span data-key="about.github">github.com/minhkhai-dev</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2 class="section-title" data-key="skills.title">Kỹ Năng Chuyên Môn</h2>
+      <div class="skills-container">
+        <div class="skill-card">
+          <h3 data-key="skills.backend.title"><i class="fas fa-code"></i> Phát Triển Backend</h3>
+          <ul class="skill-list">
+            <li>ASP.NET Core MVC / Razor Pages</li>
+            <li>Web API RESTful</li>
+            <li>Entity Framework Core</li>
+            <li>SQL Server / MongoDB</li>
+            <li data-key="skills.backend.list">Thiết kế cơ sở dữ liệu</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3 data-key="skills.frontend.title"><i class="fas fa-laptop-code"></i> Phát Triển Frontend</h3>
+          <ul class="skill-list">
+            <li>HTML5 / CSS3</li>
+            <li>Bootstrap Framework</li>
+            <li>JavaScript cơ bản</li>
+            <li>Responsive Design</li>
+            <li>UI/UX Fundamentals</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3 data-key="skills.tools.title"><i class="fas fa-tools"></i> Công Cụ & Quy Trình</h3>
+          <ul class="skill-list">
+            <li>Git & GitHub</li>
+            <li>Visual Studio</li>
+            <li>Authentication & Authorization</li>
+            <li>Google Sign-in Integration</li>
+            <li>Team Collaboration</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title" data-key="projects.title">Dự Án Tiêu Biểu</h2>
+      <div class="projects-container">
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fas fa-shopping-cart project-icon"></i>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title" data-key="projects.project1.title">Online Shopping Website</h3>
+            <div class="project-tech">
+              <span class="tech-tag">ASP.NET Core MVC</span>
+              <span class="tech-tag">Entity Framework</span>
+              <span class="tech-tag">SQL Server</span>
+              <span class="tech-tag">Bootstrap</span>
+            </div>
+            <p class="project-description" data-key="projects.project1.description">
+              Website thương mại điện tử với các tính năng đăng nhập, phân quyền người dùng/admin, quản lý sản phẩm, giỏ
+              hàng, đơn hàng, phân trang, tìm kiếm và hiển thị trang chủ. Tôi đảm nhận vai trò phát triển full-stack,
+              thiết kế cơ sở dữ liệu và giao diện người dùng cho cả admin và khách hàng.
+            </p>
+            <a href="https://github.com/minhkhai-dev/BanGiayWithMVS" class="project-link" target="_blank"
+              data-key="projects.project1.link">Chi tiết <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fas fa-newspaper project-icon"></i>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title" data-key="projects.project2.title">News Portal</h3>
+            <div class="project-tech">
+              <span class="tech-tag">ASP.NET Core</span>
+              <span class="tech-tag">WebAPI</span>
+              <span class="tech-tag">AutoMapper</span>
+              <span class="tech-tag">SQL Server</span>
+              <span class="tech-tag">Bootstrap</span>
+            </div>
+            <p class="project-description" data-key="projects.project2.description">
+              Cổng thông tin tin tức với các tính năng CRUD bài viết, lọc theo danh mục, phân quyền người dùng/admin, cờ
+              trang chủ, quản lý bình luận. Tôi chịu trách nhiệm phát triển logic backend, API, giao diện admin, và
+              logic phân trang và lọc.
+            </p>
+            <a href="https://github.com/minhkhai-dev/APICenterFLIT" class="project-link" target="_blank"
+              data-key="projects.project2.link">Chi tiết <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fas fa-coffee project-icon"></i>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title" data-key="projects.project3.title">Coffee Shop Management System</h3>
+            <div class="project-tech">
+              <span class="tech-tag">C#</span>
+              <span class="tech-tag">WinForms (.NET Framework)</span>
+              <span class="tech-tag">ADO.NET</span>
+              <span class="tech-tag">SQL Server</span>
+              <span class="tech-tag">Stored Procedures</span>
+            </div>
+            <p class="project-description" data-key="projects.project3.description">
+              Ứng dụng quản lý quán cà phê được xây dựng hoàn toàn bằng WinForms (C#). Hệ thống hỗ trợ đặt món, quản lý
+              bàn, tính tiền và xem thống kê doanh thu. Tôi phát triển toàn bộ hệ thống, từ thiết kế giao diện, xử lý
+              logic nghiệp vụ đến kết nối cơ sở dữ liệu và test phần mềm.
+            </p>
+            <a href="https://github.com/minhkhai-dev/QLQuanCafeWF" class="project-link" target="_blank"
+              data-key="projects.project3.link">Chi tiết <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fas fa-mobile-alt project-icon"></i>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title" data-key="projects.project4.title">Mobile Phone Store App</h3>
+            <div class="project-tech">
+              <span class="tech-tag">React Native</span>
+              <span class="tech-tag">Android</span>
+              <span class="tech-tag">IOS</span>
+              <span class="tech-tag">VS Code</span>
+              <span class="tech-tag">Tailwind CSS</span>
+            </div>
+            <p class="project-description" data-key="projects.project4.description">
+              Ứng dụng di động bán điện thoại được phát triển bằng React Native giúp quản lý sản phẩm và đơn hàng theo
+              thời gian thực. Tôi đảm nhận phát triển toàn bộ giao diện, xây dựng chức năng đăng nhập/đăng ký, và lưu
+              trữ dữ liệu bằng SQLite. Giao diện hiện đại, thân thiện, tối ưu cho thiết bị Android.
+            </p>
+            <a href="https://github.com/minhkhai-dev/App-apple" class="project-link" target="_blank"
+              data-key="projects.project4.link">Chi tiết <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fas fa-car project-icon"></i>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title" data-key="projects.project5.title">2D Racing Game</h3>
+            <div class="project-tech">
+              <span class="tech-tag">WinForms</span>
+              <span class="tech-tag">C#</span>
+            </div>
+            <p class="project-description" data-key="projects.project5.description">
+              Trò chơi đua xe đơn giản phát triển bằng WinForms (C#). Xe tự động di chuyển, người chơi điều khiển tránh
+              chướng ngại vật và ghi điểm. Tôi xây dựng toàn bộ giao diện, logic di chuyển và xử lý va chạm.
+            </p>
+            <a href="https://github.com/minhkhai-dev/Game_DuaXe" class="project-link" target="_blank"
+              data-key="projects.project5.link">Chi tiết <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fas fa-volleyball-ball project-icon"></i>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title" data-key="projects.project6.title">Online Model Store</h3>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">VS Code</span>
+              <span class="tech-tag">Tailwind CSS</span>
+            </div>
+            <p class="project-description" data-key="projects.project6.description">
+              Website bán mô hình online được thiết kế bằng HTML, CSS, JavaScript và Tailwind CSS. Giao diện thân thiện,
+              hiển thị sản phẩm, thêm vào giỏ hàng và tính tổng tiền. Tôi chịu trách nhiệm thiết kế toàn bộ UI và xử lý
+              logic bằng JavaScript.
+            </p>
+            <a href="https://github.com/minhkhai-dev/Shop_MoHinh_Anime" class="project-link" target="_blank"
+              data-key="projects.project6.link">Chi tiết <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Languages & Tools Section -->
+  <section id="languages" class="section languages">
+    <div class="container">
+      <h2 class="section-title" data-key="languages.title">Ngôn Ngữ & Công Cụ</h2>
+      <div class="languages-container">
+        <div class="language-card csharp">
+          <div class="language-flag"><i class="fab fa-microsoft"></i></div>
+          <h3 class="language-name" data-key="languages.csharp.name">C#</h3>
+          <p class="language-level" data-key="languages.csharp.level">Ngôn ngữ chính trong phát triển ứng dụng .NET</p>
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+        </div>
+
+        <div class="language-card sql">
+          <div class="language-flag"><i class="fas fa-database"></i></div>
+          <h3 class="language-name" data-key="languages.sql.name">SQL</h3>
+          <p class="language-level" data-key="languages.sql.level">SQL Server, Truy vấn, Stored Procedures</p>
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+        </div>
+
+        <div class="language-card html">
+          <div class="language-flag"><i class="fab fa-html5"></i></div>
+          <h3 class="language-name" data-key="languages.html.name">HTML/CSS</h3>
+          <p class="language-level" data-key="languages.html.level">Frontend, Responsive Design, Bootstrap</p>
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+        </div>
+
+        <div class="language-card js">
+          <div class="language-flag"><i class="fab fa-js"></i></div>
+          <h3 class="language-name" data-key="languages.js.name">JavaScript</h3>
+          <p class="language-level" data-key="languages.js.level">Frontend functionality, DOM manipulation</p>
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+        </div>
+
+        <div class="language-card git">
+          <div class="language-flag"><i class="fas fa-code-branch"></i></div>
+          <h3 class="language-name" data-key="languages.git.name">Git</h3>
+          <p class="language-level" data-key="languages.git.level">Version control, Collaboration, GitHub</p>
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+        </div>
+
+        <div class="language-card ef">
+          <div class="language-flag"><i class="fas fa-layer-group"></i></div>
+          <h3 class="language-name" data-key="languages.ef.name">Entity Framework</h3>
+          <p class="language-level" data-key="languages.ef.level">ORM, Code First, Migration</p>
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title" data-key="contact.title">Liên Hệ</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3 data-key="contact.info">Thông Tin Liên Hệ</h3>
+          <ul class="contact-list">
+            <li class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-text">
+                <h4 data-key="contact.address.title">Địa Chỉ</h4>
+                <a href="https://maps.app.goo.gl/PyDc19EVrV553Rqx9" target="_blank"
+                  data-key="contact.address.value">Long Thành, Đồng Nai</a>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-text">
+                <h4 data-key="contact.email.title">Email</h4>
+                <a href="mailto:minhkhai.dev@gmail.com" data-key="contact.email.value">minhkhai.dev@gmail.com</a>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-text">
+                <h4 data-key="contact.phone.title">Điện Thoại</h4>
+                <a href="tel:+84123456789" data-key="contact.phone.value">+84 363 606 453</a>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="contact-icon">
+                <i class="fab fa-github"></i>
+              </div>
+              <div class="contact-text">
+                <h4 data-key="contact.github.title">GitHub</h4>
+                <a href="https://github.com/minhkhai-dev" target="_blank"
+                  data-key="contact.github.value">github.com/minhkhai-dev</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="social-links">
+        <a class="social-link"><i class="fab fa-facebook-f"></i></a>
+        <a class="social-link"><i class="fab fa-twitter"></i></a>
+        <a class="social-link"><i class="fab fa-linkedin-in"></i></a>
+        <a class="social-link"><i class="fab fa-github"></i></a>
+      </div>
+      <p class="copyright" data-key="footer.copyright">© 2025 Uong Minh Khai. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./languages.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
